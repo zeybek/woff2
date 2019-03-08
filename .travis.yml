@@ -22,4 +22,4 @@ script:
   - make clean all
   # - make test
 after_script:
-  - ls
+  - ls -la
