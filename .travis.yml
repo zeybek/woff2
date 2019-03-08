@@ -3,6 +3,8 @@
 # https://github.com/rsp/travis-hello#readme
 
 sudo: false
+os:
+  - windows
 language: cpp
 compiler:
   - gcc
@@ -14,7 +16,7 @@ addons:
     - llvm-toolchain-precise-3.8
     packages:
     - g++-6
-    - clang-3.8
+    # - clang-3.8
 install:
 - "[ $CXX = g++ ] && export CXX=g++-6 || true"
 - "[ $CXX = clang++ ] && export CXX=clang++-3.8 || true"
